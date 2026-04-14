@@ -11,12 +11,10 @@ public class GameDirector : MonoBehaviour
         Text.text = "Click Count: " + clickCount;
     }
 
-    void Update()
+    public void USGClick()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            clickCount++;
-            Text.text = "Click Count: " + clickCount;
-        }
+        clickCount++;
+        Text.text = "Click Count: " + clickCount;
+        Debug.Log("Clicked");
     }
 }
