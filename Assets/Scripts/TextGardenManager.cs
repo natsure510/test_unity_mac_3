@@ -14,6 +14,7 @@ public class TextGardenManager : MonoBehaviour
         string input = inputField.text;
         text.text = input;
         isDecorated = false;
+        inputField.text = "";
     }
 
     public void OnEndEdit()
