@@ -20,7 +20,7 @@ public class ClickEffect : MonoBehaviour
     void Update()
     {
         // 徐々に薄くして消す
-        color.a -= 0.01f; // アルファ値を減少させる
+        color.a -= Time.deltaTime; // アルファ値を減少させる
         //Debug.Log($"color.a => {color.a}");
         sr.color = color;
         if (color.a <= 0)
